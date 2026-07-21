@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 
 /**
- * 360° spin of the car itself — cycles real photo angles when available,
+ * 360° spin of the car itself: cycles real photo angles when available,
  * or gently turns a single photo on a 3D turntable.
  */
 export default function CarSpinViewer({

@@ -4,7 +4,7 @@ export const CONTACT = {
   email: 'westlifemotors@gmail.com',
   emailHref: 'mailto:westlifemotors@gmail.com',
   address: 'Opposite Apowa Police Station, Takoradi',
-  hours: 'Mon–Sat: 8:00 – 18:00',
+  hours: 'Mon-Sat: 8:00 - 18:00',
   markets: ['Ghana', "Côte d'Ivoire"],
 }
 
@@ -21,6 +21,15 @@ export const HERO_SLIDES = [
   'https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=2000&q=80',
   'https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&fit=crop&w=2000&q=80',
   'https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=2000&q=80',
+]
+
+export const BRANDS = [
+  { name: 'Toyota', logo: '/brands/toyota.svg' },
+  { name: 'Ford', logo: '/brands/ford.svg' },
+  { name: 'GWM', logo: '/brands/gwm.svg' },
+  { name: 'Haval', logo: '/brands/haval.svg' },
+  { name: 'Changan', logo: '/brands/changan.svg' },
+  { name: 'Jetour', logo: '/brands/jetour.svg' },
 ]
 
 export const TRENDING = [
@@ -82,12 +91,12 @@ export const VEHICLE_TYPES = [
 export const WHY_US = [
   {
     title: 'Global Partnerships',
-    text: 'Strong international partnerships with trusted suppliers across America, Europe, Japan, and China.',
+    text: 'Trusted suppliers across America, Europe, Japan, and China, so you get quality vehicles with confidence.',
     icon: 'globe',
   },
   {
     title: 'Transparent Practices',
-    text: 'Clear pricing, honest condition reports, and business practices built on integrity.',
+    text: 'Clear pricing, honest condition reports, and business practices built on integrity from day one.',
     icon: 'shield',
   },
   {
@@ -96,9 +105,32 @@ export const WHY_US = [
     icon: 'truck',
   },
   {
-    title: 'Customer Satisfaction',
-    text: 'A lasting commitment to matching every client with the right vehicle for their lifestyle.',
+    title: 'Customer First',
+    text: 'Personal guidance to match every client with the right vehicle for their lifestyle and budget.',
     icon: 'heart',
+  },
+]
+
+export const FAQS = [
+  {
+    q: 'Do you import cars from America, Europe, Japan, and China?',
+    a: 'Yes. Westlife Motors specializes in importing quality vehicles from America, Europe, Japan, and China for customers across Ghana and Côte d’Ivoire.',
+  },
+  {
+    q: 'Where is your showroom located?',
+    a: 'We are based opposite Apowa Police Station in Takoradi. Visit us during business hours or book a viewing ahead of time.',
+  },
+  {
+    q: 'Can I reserve or view a vehicle before buying?',
+    a: 'Absolutely. Contact us by phone or email to book a viewing. Our team will walk you through the vehicle, condition, and options.',
+  },
+  {
+    q: 'Do you deliver outside Takoradi?',
+    a: 'Yes. We support delivery and distribution across Ghana and into Côte d’Ivoire. Ask us about timing and logistics for your location.',
+  },
+  {
+    q: 'Are prices listed online?',
+    a: 'Pricing depends on the vehicle, specs, and import details. Contact us for a clear quote with no hidden surprises.',
   },
 ]
 
@@ -129,7 +161,7 @@ export const CARS = [
     location: 'Takoradi',
     priceLabel: 'Enquire for price',
     summary:
-      'Glossy black GWM Poer double-cab with sports bar and alloy wheels — rugged, stylish, and ready for work or family use.',
+      'Glossy black GWM Poer double-cab with sports bar and alloy wheels, rugged, stylish, and ready for work or family use.',
     image: '/b6bde9b4-b9a0-4b73-90d9-d32411e7c729.jpg',
     gallery: [
       '/b6bde9b4-b9a0-4b73-90d9-d32411e7c729.jpg',
@@ -160,7 +192,7 @@ export const CARS = [
     location: 'Takoradi',
     priceLabel: 'Enquire for price',
     summary:
-      'Aggressive black Ford Ranger with bold grille, snorkel, and all-terrain setup — built for Ghana’s toughest roads.',
+      'Aggressive black Ford Ranger with bold grille, snorkel, and all-terrain setup, built for Ghana’s toughest roads.',
     image: '/5f3b8ce5-c56e-4c70-bd3c-6b82c63f41d6.jpg',
     gallery: [
       '/5f3b8ce5-c56e-4c70-bd3c-6b82c63f41d6.jpg',
@@ -191,7 +223,7 @@ export const CARS = [
     location: 'Takoradi',
     priceLabel: 'Enquire for price',
     summary:
-      'Striking red GWM Poer with snorkel, black flares, and sports bar — a standout pickup for adventure and utility.',
+      'Striking red GWM Poer with snorkel, black flares, and sports bar, a standout pickup for adventure and utility.',
     image: '/43067f4f-54d3-4156-a097-6de6cb61a56d.jpg',
     gallery: ['/43067f4f-54d3-4156-a097-6de6cb61a56d.jpg'],
     tags: ['4x4', 'China Import', 'Snorkel', 'Double Cab'],
@@ -250,7 +282,7 @@ export const CARS = [
     location: 'Takoradi',
     priceLabel: 'Enquire for price',
     summary:
-      'Bronze metallic GWM Poer with heavy-duty bull bar and LED pods — tough looks for business and transport.',
+      'Bronze metallic GWM Poer with heavy-duty bull bar and LED pods, tough looks for business and transport.',
     image: '/b070a583-6ec1-4bdd-a409-618eb60f1094.jpg',
     gallery: [
       '/b070a583-6ec1-4bdd-a409-618eb60f1094.jpg',
@@ -280,7 +312,7 @@ export const CARS = [
     location: 'Takoradi',
     priceLabel: 'Enquire for price',
     summary:
-      'White Toyota Yaris Cross compact SUV — efficient, stylish, and ideal for city driving in Ghana.',
+      'White Toyota Yaris Cross compact SUV, efficient, stylish, and ideal for city driving in Ghana.',
     image: '/f1495f19-127c-47c7-97fa-9ec214cc4b52.jpg',
     gallery: [
       '/f1495f19-127c-47c7-97fa-9ec214cc4b52.jpg',
@@ -312,7 +344,7 @@ export const CARS = [
     location: 'Takoradi',
     priceLabel: 'Enquire for price',
     summary:
-      'Reliable white Toyota sedan — comfortable, fuel-efficient, and perfect for everyday personal use.',
+      'Reliable white Toyota sedan, comfortable, fuel-efficient, and perfect for everyday personal use.',
     image: '/b987da2a-e94c-400e-aaa0-51b7b32ef66b.jpg',
     gallery: [
       '/b987da2a-e94c-400e-aaa0-51b7b32ef66b.jpg',
@@ -342,7 +374,7 @@ export const CARS = [
     location: 'Takoradi',
     priceLabel: 'Enquire for price',
     summary:
-      'Fifth-generation Toyota RAV4 in white — spacious, modern, and trusted for family and highway travel.',
+      'Fifth-generation Toyota RAV4 in white, spacious, modern, and trusted for family and highway travel.',
     image: '/acd02303-de0f-4014-b142-461a2ac43ac4.jpg',
     gallery: [
       '/acd02303-de0f-4014-b142-461a2ac43ac4.jpg',
@@ -373,7 +405,7 @@ export const CARS = [
     location: 'Takoradi',
     priceLabel: 'Enquire for price',
     summary:
-      'Metallic red Changan UNI-T with futuristic grille and red-stitched cabin — bold style for the city.',
+      'Metallic red Changan UNI-T with futuristic grille and red-stitched cabin, bold style for the city.',
     image: '/426076a6-a57b-4b50-85bc-36fe5b046bf5.jpg',
     gallery: [
       '/426076a6-a57b-4b50-85bc-36fe5b046bf5.jpg',
@@ -404,7 +436,7 @@ export const CARS = [
     location: 'Takoradi',
     priceLabel: 'Enquire for price',
     summary:
-      'Boxy Jetour T2 Traveler with roof box, side ladder, and spare cover — adventure-ready for West Africa.',
+      'Boxy Jetour T2 Traveler with roof box, side ladder, and spare cover, adventure-ready for West Africa.',
     image: '/4c424dee-367a-419c-a349-175e4092f811.jpg',
     gallery: [
       '/4c424dee-367a-419c-a349-175e4092f811.jpg',
@@ -434,7 +466,7 @@ export const CARS = [
     location: 'Takoradi',
     priceLabel: 'Enquire for price',
     summary:
-      'Silver GWM Tank 300 with rear spare cover and bold off-road stance — serious capability with premium presence.',
+      'Silver GWM Tank 300 with rear spare cover and bold off-road stance, serious capability with premium presence.',
     image: '/70d3244f-9bc4-41e0-80de-a023dceb2d99.jpg',
     gallery: [
       '/70d3244f-9bc4-41e0-80de-a023dceb2d99.jpg',
@@ -464,7 +496,7 @@ export const CARS = [
     location: 'Takoradi',
     priceLabel: 'Enquire for price',
     summary:
-      'Light grey Jetour Dashing with panoramic roof and modern styling — comfortable crossover for daily driving.',
+      'Light grey Jetour Dashing with panoramic roof and modern styling, comfortable crossover for daily driving.',
     image: '/b7c9c97f-6a00-4c05-96c5-9a3c300d0eae.jpg',
     gallery: [
       '/b7c9c97f-6a00-4c05-96c5-9a3c300d0eae.jpg',
@@ -494,7 +526,7 @@ export const CARS = [
     location: 'Takoradi',
     priceLabel: 'Enquire for price',
     summary:
-      'Glossy black Changan SUV with honeycomb grille and diamond-stitched interior — refined and ready to drive.',
+      'Glossy black Changan SUV with honeycomb grille and diamond-stitched interior, refined and ready to drive.',
     image: '/6e0c10ae-fa19-4738-b63e-835a8324334b.jpg',
     gallery: [
       '/6e0c10ae-fa19-4738-b63e-835a8324334b.jpg',
@@ -524,7 +556,7 @@ export const CARS = [
     location: 'Takoradi',
     priceLabel: 'Enquire for price',
     summary:
-      'Sleek black coupe-style Haval crossover with tinted glass and sporty lines — modern premium SUV styling.',
+      'Sleek black coupe-style Haval crossover with tinted glass and sporty lines, modern premium SUV styling.',
     image: '/a85eb977-ddc2-4986-9096-ec5dd42ea492.jpg',
     gallery: [
       '/a85eb977-ddc2-4986-9096-ec5dd42ea492.jpg',
@@ -554,7 +586,7 @@ export const CARS = [
     location: 'Takoradi',
     priceLabel: 'Enquire for price',
     summary:
-      'White Jetour X70 family SUV with chrome grille and connected rear light — spacious option for Ghana families.',
+      'White Jetour X70 family SUV with chrome grille and connected rear light, spacious option for Ghana families.',
     image: '/6bb8d20d-e0bd-48c9-a093-7978f5469f46.jpg',
     gallery: [
       '/6bb8d20d-e0bd-48c9-a093-7978f5469f46.jpg',
@@ -585,7 +617,7 @@ export const CARS = [
     location: 'Takoradi',
     priceLabel: 'Enquire for price',
     summary:
-      'White Toyota Levin Hybrid sedan — modern, efficient, and ideal for city and highway driving across Ghana.',
+      'White Toyota Levin Hybrid sedan, modern, efficient, and ideal for city and highway driving across Ghana.',
     image: '/4326cd89-cc68-4d5f-aeff-563d52fc4b64.jpg',
     gallery: [
       '/4326cd89-cc68-4d5f-aeff-563d52fc4b64.jpg',
@@ -616,7 +648,7 @@ export const CARS = [
     location: 'Takoradi',
     priceLabel: 'Enquire for price',
     summary:
-      'Spacious white Toyota Alphard MPV — comfortable people-mover for family, business, and passenger transport.',
+      'Spacious white Toyota Alphard MPV, comfortable people-mover for family, business, and passenger transport.',
     image: '/c72b40f3-bf0c-49f3-864c-611be2abaa37.jpg',
     gallery: ['/c72b40f3-bf0c-49f3-864c-611be2abaa37.jpg'],
     tags: ['MPV', 'Japan Import', '7 Seats', 'Commercial'],

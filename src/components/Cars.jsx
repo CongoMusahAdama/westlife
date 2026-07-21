@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { CAR_FILTERS, CARS } from '../data'
 import { Reveal } from '../hooks/useReveal'
+import { IconFuel, IconGauge, IconGear, IconPin, IconSeats } from './Icons'
 
 export default function Cars() {
   const [filter, setFilter] = useState('all')
@@ -37,9 +38,13 @@ export default function Cars() {
   return (
     <section className="cars" id="cars" ref={sectionRef}>
       <div className="container">
-        <Reveal as="header" className="reveal--head">
-          <h2 className="section-title section-title--center">Our Cars</h2>
+        <Reveal as="header" className="cars__header reveal--head">
+          <div>
+            <h2 className="section-title">Our Cars</h2>
+            <p className="cars__subtitle">Premium imports ready for Ghana and Côte d&apos;Ivoire.</p>
+          </div>
         </Reveal>
+
         <div className="cars__tabs" role="tablist">
           {CAR_FILTERS.map((tab) => (
             <button
@@ -61,12 +66,41 @@ export default function Cars() {
                   <div className="car-card__media">
                     <img src={car.image} alt={car.name} loading="lazy" />
                   </div>
+                  <span className="car-card__badge">{car.year}</span>
                 </div>
+
                 <div className="car-card__body">
-                  <p className="car-card__meta">{car.meta}</p>
                   <h3>{car.name}</h3>
-                  <p className="car-card__price">{car.priceLabel}</p>
-                  <span className="car-card__link">View details</span>
+                  <p className="car-card__loc">
+                    <IconPin />
+                    <span>
+                      {car.location}, Ghana
+                    </span>
+                  </p>
+
+                  <ul className="car-card__specs">
+                    <li>
+                      <IconGauge />
+                      <span>{car.drive}</span>
+                    </li>
+                    <li>
+                      <IconGear />
+                      <span>{car.transmission}</span>
+                    </li>
+                    <li>
+                      <IconFuel />
+                      <span>{car.fuel}</span>
+                    </li>
+                    <li>
+                      <IconSeats />
+                      <span>{car.seats}</span>
+                    </li>
+                  </ul>
+
+                  <div className="car-card__footer">
+                    <span className="car-card__meta">{car.meta}</span>
+                    <span className="car-card__cta">View details</span>
+                  </div>
                 </div>
               </Link>
             </article>

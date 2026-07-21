@@ -29,7 +29,7 @@ export default function Hero() {
         <p className="hero__brand">Westlife Motors</p>
         <h1 className="hero__title">Drive Your Dream</h1>
         <p className="hero__lead">
-          Premium vehicles from America, Europe, Japan, and China — delivered across Ghana and Côte d&apos;Ivoire.
+          Premium vehicles from America, Europe, Japan, and China, delivered across Ghana and Côte d&apos;Ivoire.
         </p>
         <div className="hero__actions">
           <a href="#about" className="btn btn--ghost">

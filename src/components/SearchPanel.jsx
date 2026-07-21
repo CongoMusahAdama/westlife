@@ -20,7 +20,7 @@ export default function SearchPanel() {
     const parts = Object.entries({ condition, ...form })
       .filter(([, v]) => v && v !== 'all')
       .map(([k, v]) => `${k}: ${v}`)
-    window.alert(parts.length ? `Searching inventory — ${parts.join(', ')}` : 'Showing all available vehicles.')
+    window.alert(parts.length ? `Searching inventory: ${parts.join(', ')}` : 'Showing all available vehicles.')
   }
 
   return (
@@ -49,10 +49,14 @@ export default function SearchPanel() {
               <select name="make" value={form.make} onChange={update('make')}>
                 <option value="">Any Make</option>
                 <option>Toyota</option>
+                <option>Ford</option>
+                <option>GWM</option>
+                <option>Haval</option>
+                <option>Jetour</option>
+                <option>Changan</option>
                 <option>Honda</option>
                 <option>Mercedes-Benz</option>
                 <option>BMW</option>
-                <option>Ford</option>
                 <option>Hyundai</option>
                 <option>Nissan</option>
               </select>
@@ -84,7 +88,7 @@ export default function SearchPanel() {
               <input
                 type="text"
                 name="location"
-                placeholder="Takoradi, Accra…"
+                placeholder="Takoradi…"
                 value={form.location}
                 onChange={update('location')}
               />

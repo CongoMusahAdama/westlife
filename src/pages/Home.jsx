@@ -1,6 +1,7 @@
 import Header from '../components/Header'
 import Hero from '../components/Hero'
 import SearchPanel from '../components/SearchPanel'
+import Brands from '../components/Brands'
 import Trending from '../components/Trending'
 import VehicleTypes from '../components/VehicleTypes'
 import About from '../components/About'
@@ -16,6 +17,7 @@ export default function Home() {
       <main>
         <Hero />
         <SearchPanel />
+        <Brands />
         <Trending />
         <VehicleTypes />
         <About />

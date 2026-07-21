@@ -9,18 +9,18 @@ export default function About() {
           <h2 className="section-title">Trusted automobile leaders from Takoradi</h2>
           <p>
             Founded in Takoradi, Western Region of Ghana, Westlife Motors is a trusted leader in the automobile
-            industry. We specialize in importing high-quality vehicles from America, Europe, Japan, and China —
+            industry. We specialize in importing high-quality vehicles from America, Europe, Japan, and China,
             delivering reliable and affordable options to customers across Ghana and Côte d&apos;Ivoire.
           </p>
           <p>
-            With a commitment to excellence, we provide cars that meet diverse needs — from sleek sedans and rugged
+            With a commitment to excellence, we provide cars that meet diverse needs, from sleek sedans and rugged
             SUVs to durable pickups, trucks, and commercial vehicles.
           </p>
           <div className="about__pillars">
             <div>
               <h3>Our Mission</h3>
               <p>
-                Make premium international automobiles accessible to the West African market — bridging global
+                Make premium international automobiles accessible to the West African market, bridging global
                 innovation and local demand with quality, affordability, and performance.
               </p>
             </div>

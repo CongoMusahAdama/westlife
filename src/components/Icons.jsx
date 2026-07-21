@@ -3,11 +3,13 @@ import { Link } from 'react-router-dom'
 export function Logo({ footer = false }) {
   return (
     <Link to="/" className={`logo${footer ? ' logo--footer' : ''}`} aria-label="Westlife Motors home">
-      <span className="logo__mark" aria-hidden="true" />
-      <span className="logo__text">
-        <strong>Westlife</strong>
-        <span>Motors</span>
-      </span>
+      <img
+        className="logo__img"
+        src="/westlife-logo.png"
+        alt="Westlife Motors"
+        width="160"
+        height="160"
+      />
     </Link>
   )
 }
@@ -76,48 +78,97 @@ export function IconUser() {
   )
 }
 
+export function IconGauge() {
+  return (
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <path d="M4.5 16a8.5 8.5 0 1 1 15 0" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+      <path d="M12 15.5 15.2 9.8" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+      <circle cx="12" cy="15.5" r="1.2" fill="currentColor" />
+    </svg>
+  )
+}
+
+export function IconGear() {
+  return (
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <rect x="8" y="4" width="8" height="16" rx="2" stroke="currentColor" strokeWidth="1.5" />
+      <path d="M11 7.5h2M11 12h2M11 16.5h2" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+    </svg>
+  )
+}
+
+export function IconFuel() {
+  return (
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <path
+        d="M5 20V6.5A1.5 1.5 0 0 1 6.5 5h6A1.5 1.5 0 0 1 14 6.5V20M5 20h9M8 8.5h3M16 8.5h1.2A1.8 1.8 0 0 1 19 10.3V16a1.5 1.5 0 0 0 1.5 1.5"
+        stroke="currentColor"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  )
+}
+
+export function IconSeats() {
+  return (
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <circle cx="12" cy="7.5" r="2.6" stroke="currentColor" strokeWidth="1.5" />
+      <path d="M6.5 18.5c1.2-2.4 3-3.6 5.5-3.6s4.3 1.2 5.5 3.6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+    </svg>
+  )
+}
+
 export function IconGlobe() {
   return (
-    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-      <path d="M4 12h3l2-6 3 12 2-6h4" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <circle cx="12" cy="12" r="8.5" stroke="currentColor" strokeWidth="1.5" />
+      <path d="M3.5 12h17M12 3.5c2.4 2.6 3.6 5.4 3.6 8.5S14.4 17.9 12 20.5C9.6 17.9 8.4 15.1 8.4 12S9.6 6.1 12 3.5Z" stroke="currentColor" strokeWidth="1.5" />
     </svg>
   )
 }
 
 export function IconShield() {
   return (
-    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true">
       <path
         d="M12 3 4.5 6.5v5.2c0 4.6 3.2 8.7 7.5 9.8 4.3-1.1 7.5-5.2 7.5-9.8V6.5L12 3Z"
         stroke="currentColor"
-        strokeWidth="1.6"
+        strokeWidth="1.5"
         strokeLinejoin="round"
       />
-      <path d="m9 12 2 2 4-4" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="m9 12 2 2 4-4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
     </svg>
   )
 }
 
 export function IconTruck() {
   return (
-    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true">
       <path
         d="M3 16.5V7.8A1.8 1.8 0 0 1 4.8 6h9.4A1.8 1.8 0 0 1 16 7.8v8.7M16 10.5h2.4a2 2 0 0 1 1.8 1.1l1.5 2.9a2 2 0 0 1 .1.8V16.5M3 16.5h18"
         stroke="currentColor"
-        strokeWidth="1.6"
+        strokeWidth="1.5"
         strokeLinecap="round"
       />
-      <circle cx="7" cy="16.5" r="1.8" stroke="currentColor" strokeWidth="1.6" />
-      <circle cx="17" cy="16.5" r="1.8" stroke="currentColor" strokeWidth="1.6" />
+      <circle cx="7" cy="16.5" r="1.8" stroke="currentColor" strokeWidth="1.5" />
+      <circle cx="17" cy="16.5" r="1.8" stroke="currentColor" strokeWidth="1.5" />
     </svg>
   )
 }
 
 export function IconHeart() {
   return (
-    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-      <path d="M12 20s7-4.4 7-10a7 7 0 1 0-14 0c0 5.6 7 10 7 10Z" stroke="currentColor" strokeWidth="1.6" />
-      <path d="M9.5 10.5 11 12l3.5-3.5" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <circle cx="9" cy="8" r="2.6" stroke="currentColor" strokeWidth="1.5" />
+      <circle cx="15.5" cy="8" r="2.6" stroke="currentColor" strokeWidth="1.5" />
+      <path
+        d="M4.5 18.5c1.4-2.6 3.4-3.9 5.5-3.9.8 0 1.5.2 2.2.5.7-.3 1.4-.5 2.2-.5 2.1 0 4.1 1.3 5.5 3.9"
+        stroke="currentColor"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+      />
     </svg>
   )
 }

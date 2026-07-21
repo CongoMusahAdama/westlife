@@ -52,7 +52,7 @@ export default function CarDetail() {
             <div>
               <h1>{car.name}</h1>
               <p>
-                {car.year} — {car.edition}
+                {car.year}, {car.edition}
               </p>
             </div>
             <div className="detail-mode">
