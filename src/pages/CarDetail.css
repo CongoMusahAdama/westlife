@@ -6,7 +6,7 @@
   --d-line: #e6e6e6;
   --d-accent: #d6f35c;
   --d-warn: #ef6a4c;
-  --d-brand: #c6a336;
+  --d-brand: #e2af1d;
   min-height: 100vh;
   background: var(--d-bg);
   color: var(--d-ink);
@@ -140,7 +140,7 @@
   position: relative;
   border-radius: 24px;
   background:
-    radial-gradient(circle at 50% 78%, rgba(198, 163, 54, 0.16), transparent 40%),
+    radial-gradient(circle at 50% 78%, rgba(226, 175, 29, 0.18), transparent 40%),
     linear-gradient(180deg, #f7f7f7 0%, #ececec 100%);
   min-height: 380px;
   overflow: hidden;
@@ -796,7 +796,7 @@
     justify-content: center;
     min-height: 48px;
     border-radius: 999px;
-    background: #c6a336;
+    background: #e2af1d;
     color: #fff;
     font-size: 0.82rem;
     font-weight: 600;

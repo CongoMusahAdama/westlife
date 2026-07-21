@@ -1,11 +1,12 @@
 import { CONTACT } from '../data'
 import { IconPhone, IconPin } from './Icons'
+import { Reveal } from '../hooks/useReveal'
 
 export default function Contact() {
   return (
     <section className="cta" id="contact">
       <div className="container cta__inner">
-        <div>
+        <Reveal className="reveal--head">
           <p className="eyebrow eyebrow--light">Get in Touch</p>
           <h2>Ready to drive your dream?</h2>
           <p>
@@ -29,15 +30,15 @@ export default function Contact() {
               <a href={CONTACT.emailHref}>{CONTACT.email}</a>
             </li>
           </ul>
-        </div>
-        <div className="cta__actions">
+        </Reveal>
+        <Reveal className="cta__actions reveal--card" delay={120}>
           <a href={CONTACT.phoneHref} className="btn btn--light">
             Call Now
           </a>
           <a href={CONTACT.emailHref} className="btn btn--ghost-dark">
             Email Us
           </a>
-        </div>
+        </Reveal>
       </div>
     </section>
   )

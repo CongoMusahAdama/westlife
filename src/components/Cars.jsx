@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { CAR_FILTERS, CARS } from '../data'
+import { Reveal } from '../hooks/useReveal'
 
 export default function Cars() {
   const [filter, setFilter] = useState('all')
@@ -21,7 +22,7 @@ export default function Cars() {
           observer.disconnect()
         }
       },
-      { threshold: 0.18 }
+      { threshold: 0.12 }
     )
 
     observer.observe(node)
@@ -36,7 +37,9 @@ export default function Cars() {
   return (
     <section className="cars" id="cars" ref={sectionRef}>
       <div className="container">
-        <h2 className="section-title section-title--center">Our Cars</h2>
+        <Reveal as="header" className="reveal--head">
+          <h2 className="section-title section-title--center">Our Cars</h2>
+        </Reveal>
         <div className="cars__tabs" role="tablist">
           {CAR_FILTERS.map((tab) => (
             <button

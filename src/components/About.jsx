@@ -1,8 +1,10 @@
+import { Reveal } from '../hooks/useReveal'
+
 export default function About() {
   return (
     <section className="about" id="about">
       <div className="container about__grid">
-        <div className="about__copy">
+        <Reveal className="about__copy reveal--head">
           <p className="eyebrow">About Us</p>
           <h2 className="section-title">Trusted automobile leaders from Takoradi</h2>
           <p>
@@ -30,8 +32,8 @@ export default function About() {
               </p>
             </div>
           </div>
-        </div>
-        <div className="about__visual">
+        </Reveal>
+        <Reveal className="about__visual reveal--media" delay={140}>
           <img
             src="https://images.unsplash.com/photo-1485291571150-772bcfc10da5?auto=format&fit=crop&w=1000&q=80"
             alt="Luxury vehicle representing Westlife Motors inventory"
@@ -40,7 +42,7 @@ export default function About() {
             <strong>Ghana + Côte d&apos;Ivoire</strong>
             <span>Our market across West Africa</span>
           </div>
-        </div>
+        </Reveal>
       </div>
     </section>
   )
