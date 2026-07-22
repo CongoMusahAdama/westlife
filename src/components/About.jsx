@@ -28,7 +28,7 @@ export default function About() {
               <h3>Our Vision</h3>
               <p>
                 To become the most trusted automobile importer and distributor in West Africa, recognized for
-                integrity, customer satisfaction, and unmatched service.
+                integrity, customer satisfaction, and dedicated service.
               </p>
             </div>
           </div>

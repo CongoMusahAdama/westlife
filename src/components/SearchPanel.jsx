@@ -66,6 +66,7 @@ export default function SearchPanel() {
               <select name="model" value={form.model} onChange={update('model')}>
                 <option value="">Any Model</option>
                 <option>Camry</option>
+                <option>Corolla Cross</option>
                 <option>Land Cruiser</option>
                 <option>Hilux</option>
                 <option>Civic</option>
