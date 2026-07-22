@@ -54,6 +54,7 @@ export default function SearchPanel() {
                 <option>Haval</option>
                 <option>Jetour</option>
                 <option>Changan</option>
+                <option>Samsung</option>
                 <option>Honda</option>
                 <option>Mercedes-Benz</option>
                 <option>BMW</option>
@@ -67,6 +68,8 @@ export default function SearchPanel() {
                 <option value="">Any Model</option>
                 <option>Camry</option>
                 <option>Corolla Cross</option>
+                <option>Voxy</option>
+                <option>QM6</option>
                 <option>Land Cruiser</option>
                 <option>Hilux</option>
                 <option>Civic</option>
