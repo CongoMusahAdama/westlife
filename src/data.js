@@ -12,7 +12,7 @@ export const NAV_LINKS = [
   { href: '/#home', label: 'Home' },
   { href: '/#inventory', label: 'Inventory' },
   { href: '/#types', label: 'Vehicles' },
-  { href: '/#about', label: 'About', desktopOnly: true },
+  { href: '/#about', label: 'About' },
   { href: '/#why', label: 'Why Us' },
   { href: '/#contact', label: 'Contact' },
 ]

@@ -2246,7 +2246,71 @@ ul {
   }
 
   .about {
-    display: none;
+    display: block;
+    padding: 2.75rem 0 2.5rem;
+  }
+
+  .about .container {
+    width: 100%;
+    padding-inline: 0.85rem;
+  }
+
+  .about__grid {
+    gap: 1.5rem;
+  }
+
+  .about__copy .section-title {
+    font-size: 1.45rem;
+    margin-bottom: 0.85rem;
+  }
+
+  .about__copy > p {
+    font-size: 0.92rem;
+    line-height: 1.6;
+    margin-bottom: 0.85rem;
+  }
+
+  .about__pillars {
+    gap: 0.85rem;
+    margin-top: 1.25rem;
+  }
+
+  .about__pillars > div {
+    padding: 1rem 0.95rem;
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(248, 200, 0, 0.22);
+  }
+
+  .about__pillars h3 {
+    font-size: 1rem;
+    margin-bottom: 0.4rem;
+  }
+
+  .about__pillars p {
+    font-size: 0.88rem;
+    line-height: 1.55;
+    margin: 0;
+  }
+
+  .about__visual img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+  }
+
+  .about__badge {
+    left: 0.75rem;
+    bottom: 0.75rem;
+    right: 0.75rem;
+    padding: 0.75rem 0.85rem;
+  }
+
+  .about__badge strong {
+    font-size: 0.9rem;
+  }
+
+  .about__badge span {
+    font-size: 0.78rem;
   }
 
   .car-card__loc span {
