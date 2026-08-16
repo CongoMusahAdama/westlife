@@ -173,6 +173,33 @@ export function IconHeart() {
   )
 }
 
+export function IconSun() {
+  return (
+    <svg width="17" height="17" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <circle cx="12" cy="12" r="4.3" stroke="currentColor" strokeWidth="1.6" />
+      <path
+        d="M12 2.7v2.3M12 19v2.3M4.6 4.6l1.6 1.6M17.8 17.8l1.6 1.6M2.7 12H5M19 12h2.3M4.6 19.4l1.6-1.6M17.8 6.2l1.6-1.6"
+        stroke="currentColor"
+        strokeWidth="1.6"
+        strokeLinecap="round"
+      />
+    </svg>
+  )
+}
+
+export function IconMoon() {
+  return (
+    <svg width="17" height="17" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <path
+        d="M20 14.2A8.5 8.5 0 0 1 9.8 4a8.5 8.5 0 1 0 10.2 10.2Z"
+        stroke="currentColor"
+        strokeWidth="1.6"
+        strokeLinejoin="round"
+      />
+    </svg>
+  )
+}
+
 const WHY_ICONS = {
   globe: IconGlobe,
   shield: IconShield,

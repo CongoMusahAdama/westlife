@@ -1,13 +1,16 @@
-import { useEffect, useMemo, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Link, useNavigate, useParams } from 'react-router-dom'
-import { CONTACT, getCarById } from '../data'
+import { CONTACT } from '../data'
+import { fetchCarById } from '../lib/carsApi'
 import CarSpinViewer from '../components/CarSpinViewer'
+import ThemeToggle from '../components/ThemeToggle'
 import './CarDetail.css'
 
 export default function CarDetail() {
   const { id } = useParams()
   const navigate = useNavigate()
-  const car = useMemo(() => getCarById(id), [id])
+  const [car, setCar] = useState(null)
+  const [status, setStatus] = useState('loading')
   const [mode, setMode] = useState('buy')
   const [activeShot, setActiveShot] = useState(0)
   const [orbiting, setOrbiting] = useState(true)
@@ -17,7 +20,18 @@ export default function CarDetail() {
     window.scrollTo(0, 0)
     setActiveShot(0)
     setOrbiting(true)
+    setStatus('loading')
+    fetchCarById(id)
+      .then((data) => {
+        setCar(data)
+        setStatus(data ? 'ready' : 'missing')
+      })
+      .catch(() => setStatus('error'))
   }, [id])
+
+  if (status === 'loading') {
+    return <div className="detail-missing"><h1>Loading…</h1></div>
+  }
 
   if (!car) {
     return (
@@ -43,6 +57,7 @@ export default function CarDetail() {
           <a href={CONTACT.phoneHref} className="detail__call">
             {CONTACT.phone}
           </a>
+          <ThemeToggle />
         </div>
       </header>
 

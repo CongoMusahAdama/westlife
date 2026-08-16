@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { CONTACT, NAV_LINKS } from '../data'
 import { IconCar, IconClock, IconPhone, IconPin, IconUser, Logo } from './Icons'
+import ThemeToggle from './ThemeToggle'
 
 export default function Header() {
   const [open, setOpen] = useState(false)
@@ -82,6 +83,7 @@ export default function Header() {
               <IconUser />
               Enquire
             </a>
+            <ThemeToggle />
           </div>
 
           <button

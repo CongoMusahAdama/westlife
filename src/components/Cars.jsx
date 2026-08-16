@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
-import { CAR_FILTERS, CARS } from '../data'
+import { CAR_FILTERS } from '../data'
+import { fetchCars } from '../lib/carsApi'
 import { Reveal } from '../hooks/useReveal'
 import { IconFuel, IconGauge, IconGear, IconPin, IconSeats } from './Icons'
 
@@ -9,8 +10,19 @@ export default function Cars() {
   const [visible, setVisible] = useState(false)
   const [animKey, setAnimKey] = useState(0)
   const sectionRef = useRef(null)
+  const [allCars, setAllCars] = useState([])
+  const [status, setStatus] = useState('loading')
 
-  const cars = CARS.filter((car) => filter === 'all' || car.category === filter)
+  useEffect(() => {
+    fetchCars()
+      .then((data) => {
+        setAllCars(data)
+        setStatus('ready')
+      })
+      .catch(() => setStatus('error'))
+  }, [])
+
+  const cars = allCars.filter((car) => filter === 'all' || car.category === filter)
 
   useEffect(() => {
     const node = sectionRef.current
@@ -57,6 +69,10 @@ export default function Cars() {
             </button>
           ))}
         </div>
+
+        {status === 'loading' && <p className="cars__subtitle">Loading inventory…</p>}
+        {status === 'error' && <p className="cars__subtitle">Could not load the inventory. Please refresh.</p>}
+        {status === 'ready' && cars.length === 0 && <p className="cars__subtitle">No cars in this category yet.</p>}
 
         <div className={`cars__grid${visible ? ' is-visible' : ''}`} key={animKey}>
           {cars.map((car, index) => (

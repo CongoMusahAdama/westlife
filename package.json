@@ -5,16 +5,23 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "dev:api": "node --env-file=.env scripts/dev-api-server.mjs",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "seed": "node --env-file=.env scripts/seed.mjs"
   },
   "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cloudinary": "^2.10.0",
+    "jsonwebtoken": "^9.0.3",
+    "mongodb": "^7.5.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-router-dom": "^7.18.1"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.5.2",
+    "express": "^5.2.1",
     "vite": "^6.3.5"
   }
 }
