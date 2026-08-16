@@ -2,6 +2,10 @@ import { CONTACT } from '../data'
 import { IconPhone, IconPin } from './Icons'
 import { Reveal } from '../hooks/useReveal'
 
+const MAP_QUERY = encodeURIComponent(`${CONTACT.address}, Ghana`)
+const MAP_DIRECTIONS_URL = `https://www.google.com/maps/dir/?api=1&destination=${MAP_QUERY}`
+const MAP_EMBED_URL = `https://www.google.com/maps?q=${MAP_QUERY}&output=embed`
+
 export default function Contact() {
   return (
     <section className="cta" id="contact">
@@ -30,6 +34,24 @@ export default function Contact() {
               <a href={CONTACT.emailHref}>{CONTACT.email}</a>
             </li>
           </ul>
+
+          <a
+            className="cta__map"
+            href={MAP_DIRECTIONS_URL}
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Get directions to Westlife Motors on Google Maps"
+          >
+            <iframe
+              src={MAP_EMBED_URL}
+              title="Westlife Motors location"
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              tabIndex={-1}
+              aria-hidden="true"
+            />
+            <span className="cta__map-label">Get Directions ↗</span>
+          </a>
         </Reveal>
         <Reveal className="cta__actions reveal--card" delay={120}>
           <a href={CONTACT.phoneHref} className="btn btn--light">
