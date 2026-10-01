@@ -48,6 +48,11 @@ export default function Footer() {
             <li>
               <a href={CONTACT.emailHref}>{CONTACT.email}</a>
             </li>
+            <li>
+              <a href={CONTACT.facebook} target="_blank" rel="noreferrer">
+                Facebook: Westlife Motors
+              </a>
+            </li>
           </ul>
         </div>
       </div>

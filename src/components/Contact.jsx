@@ -33,6 +33,14 @@ export default function Contact() {
               </svg>
               <a href={CONTACT.emailHref}>{CONTACT.email}</a>
             </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M14 9h3V6h-3c-1.7 0-3 1.3-3 3v2H9v3h2v7h3v-7h3l1-3h-4V9c0-.6.4-1 1-1z" />
+              </svg>
+              <a href={CONTACT.facebook} target="_blank" rel="noreferrer">
+                Westlife Motors on Facebook
+              </a>
+            </li>
           </ul>
 
           <a

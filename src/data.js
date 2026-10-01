@@ -5,6 +5,7 @@ export const CONTACT = {
   emailHref: 'mailto:westlifemotors@gmail.com',
   address: 'Opposite Apowa Police Station, Takoradi',
   hours: 'Mon-Sat: 8:00 - 18:00',
+  facebook: 'https://web.facebook.com/profile.php?id=61594365103981',
   markets: ['Ghana', "Côte d'Ivoire"],
 }
 

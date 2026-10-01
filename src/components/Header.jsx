@@ -63,7 +63,7 @@ export default function Header() {
 
           <div className="nav__actions">
             <div className="nav__social" aria-label="Social links">
-              <a href="https://facebook.com" aria-label="Facebook" target="_blank" rel="noreferrer">
+              <a href={CONTACT.facebook} aria-label="Facebook" target="_blank" rel="noreferrer">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
                   <path d="M14 9h3V6h-3c-1.7 0-3 1.3-3 3v2H9v3h2v7h3v-7h3l1-3h-4V9c0-.6.4-1 1-1z" />
                 </svg>
