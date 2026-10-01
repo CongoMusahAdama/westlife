@@ -31,6 +31,7 @@ export const BRANDS = [
   { name: 'Changan', logo: '/brands/changan.svg' },
   { name: 'Jetour', logo: '/brands/jetour.svg' },
   { name: 'Samsung', logo: '/brands/samsung.svg' },
+  { name: 'Foton', logo: '/brands/foton.svg' },
 ]
 
 export const TRENDING = [

@@ -55,6 +55,7 @@ export default function SearchPanel() {
                 <option>Jetour</option>
                 <option>Changan</option>
                 <option>Samsung</option>
+                <option>Foton</option>
                 <option>Honda</option>
                 <option>Mercedes-Benz</option>
                 <option>BMW</option>
@@ -74,6 +75,7 @@ export default function SearchPanel() {
                 <option>Hilux</option>
                 <option>Civic</option>
                 <option>Ranger</option>
+                <option>Tunland</option>
               </select>
             </label>
             <label className="field">
