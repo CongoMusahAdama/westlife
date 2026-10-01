@@ -76,6 +76,7 @@ export default function SearchPanel() {
                 <option>Civic</option>
                 <option>Ranger</option>
                 <option>Tunland</option>
+                <option>Poer</option>
               </select>
             </label>
             <label className="field">
