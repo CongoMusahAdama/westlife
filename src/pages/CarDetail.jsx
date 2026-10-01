@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { Link, useNavigate, useParams } from 'react-router-dom'
 import { CONTACT } from '../data'
-import { fetchCarById } from '../lib/carsApi'
+import { fetchInventoryCar } from '../lib/carsApi'
 import CarSpinViewer from '../components/CarSpinViewer'
 import ThemeToggle from '../components/ThemeToggle'
 import './CarDetail.css'
@@ -21,7 +21,7 @@ export default function CarDetail() {
     setActiveShot(0)
     setOrbiting(true)
     setStatus('loading')
-    fetchCarById(id)
+    fetchInventoryCar(id)
       .then((data) => {
         setCar(data)
         setStatus(data ? 'ready' : 'missing')

@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { CAR_FILTERS } from '../data'
-import { fetchCars } from '../lib/carsApi'
+import { fetchInventory } from '../lib/carsApi'
 import { Reveal } from '../hooks/useReveal'
 import { IconFuel, IconGauge, IconGear, IconPin, IconSeats } from './Icons'
 
@@ -14,7 +14,7 @@ export default function Cars() {
   const [status, setStatus] = useState('loading')
 
   useEffect(() => {
-    fetchCars()
+    fetchInventory()
       .then((data) => {
         setAllCars(data)
         setStatus('ready')
